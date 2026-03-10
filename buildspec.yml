@@ -14,7 +14,7 @@ phases:
       - echo Pushing image to ECR...
       - docker push $ECR_REPO_URI:latest
       - echo Writing image definitions file...
-      - printf '[{"name":"rps-container","imageUri":"%s"}]' $ECR_REPO_URI:latest > imagedefinitions.json
+      - printf '[{"name":"rock-paper-scissors","imageUri":"%s"}]' $ECR_REPO_URI:latest > imagedefinitions.json
 
 artifacts:
   files:
